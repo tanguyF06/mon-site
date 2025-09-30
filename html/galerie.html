@@ -1,278 +1,305 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pergola et Toiture - Tomatis Azur</title>
 
   <!-- CSS de base et reset -->
-<link rel="stylesheet" href="../css/reset.css" />
-<link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/base.css" />
 
-<!-- Menu de navigation commun -->
-<link rel="stylesheet" href="../css/navbar.css" />
+  <!-- Menu de navigation commun -->
+  <link rel="stylesheet" href="../css/navbar.css" />
 
-<!-- Spécifique à la page galerie (ou accueil selon la page) -->
-<link rel="stylesheet" href="../css/galerie.css" />
+  <!-- Spécifique à la page galerie -->
+  <link rel="stylesheet" href="../css/galerie.css" />
 
-<!-- Librairies externes -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
-<link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet" />
-<link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Oswald&display=swap" rel="stylesheet" />
+  <!-- Librairies externes -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Oswald&display=swap" rel="stylesheet" />
 </head>
 
 <body>
   <header>
-  <div class="navbar">
-    <nav class="navbar1">
-      <div class="nav-left"></div>
-      <a href="index.html" class="logo1">
-        <img src="../images/logo-transparent-png.png" alt="logo de la société">
-      </a>
-    </nav>
-    
-    
-<!--Burger-->
-    <div class="burger" id="burger">&#9776;</div>
-   
-      
-    <ul class="nav-links" id="navlinks">
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="galerie.html">Galerie</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+    <div class="navbar">
+      <nav class="navbar1">
+        <div class="nav-left"></div>
+        <a href="index.html" class="logo1">
+          <img src="../images/logo-transparent-png.png" alt="logo de la société">
+        </a>
+      </nav>
+      <!--Burger-->
+      <div class="burger" id="burger">&#9776;</div>
+      <ul class="nav-links" id="navlinks">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <h1>Nos créations</h1>
+  <div class="boutons">
+    <button class="filtre-btn" data-categorie="escaliers">Escaliers</button>
+    <button class="filtre-btn" data-categorie="portails">Portails</button>
+    <button class="filtre-btn" data-categorie="gardecorps">Garde-corps</button>
   </div>
-</header>
-<h1>Nos créations</h1>
-<div class="boutons">
-      <button class="filtre-btn" data-categorie="escaliers">Escaliers</button>
-      <button class="filtre-btn" data-categorie="portails">Portails</button>
-      <button class="filtre-btn" data-categorie="gardecorps">Garde-corps</button>
-    
-    </div>
 
- 
-  
-<!-- Groupe ESCALIERS -->
-<section class="filtre-galerie">
-  <div class="galerie">
-   
- <!-- Ancre pour le scroll propre -->
-    <div id="escaliers" class="ancre"></div>
-    <!-- Bloc image + texte (visible uniquement pour escaliers) -->
-    
-    <div class="bloc-image-texte" data-categorie="escaliers" style="display: none;">
-      <div class="bloc-image">
-        <img src="../images/escalier13.webp" alt="Escalier design">
-      </div>
-      <div class="texte">
-        <h2>Découvrez notre savoir-faire en ferronnerie</h2>
-        <p class="texte-important">Souvent au cœur de l'habitation, l'escalier est bien plus qu'un élément fonctionnel. Il structure l'espace, attire le regard et donne le ton à votre décoration intérieure ou extérieure. Un escalier de qualité, bien conçu et esthétiquement travaillé, devient une pièce maîtresse de votre maison.</p>
-        <p><strong>Chez Tomatis Azur, nous transformons chaque escalier en une véritable œuvre d'art</strong> grâce à notre savoir-faire en ferronnerie. Qu'il soit classique, contemporain ou forgé sur mesure, un bel escalier apporte une plus-value indéniable à votre bien, en termes de confort, de sécurité... mais aussi de style.</p>
-      </div>
-    </div>
-
-    <!-- Groupe ESCALIERS images -->
-    <div class="groupe" data-categorie="escaliers" style="display: none;">
-      <h2>Nos escaliers</h2>
-
-      <div class="conteneur-texte">
-        <h3>
-          Investir dans un escalier en ferronnerie, c'est choisir la durabilité, l’élégance et le caractère. C'est faire le choix d'un élément unique, à votre image, qui traversera les années sans perdre son charme.
-        </h3>
-      </div>
-
-      <!-- Carousel -->
-      <div class="owl-carousel galerie-defilante">
-        <a href="../images/escalier11.webp" data-lightbox="escaliers"><img src="../images/escalier11.webp" alt="escalier 1"></a>
-        <a href="../images/escalier12.webp" data-lightbox="escaliers"><img src="../images/escalier12.webp" alt="escalier 2"></a>
-        <a href="../images/escalier14.webp" data-lightbox="escaliers"><img src="../images/escalier14.webp" alt="escalier 3"></a>
-      </div>
-
-      <!-- Bloc image + texte DUPLIQUÉ -->
-      <div class="bloc-image-texte2" data-categorie="escaliers" style="display: flex;">
+  <!-- ================= ESCALIERS ================= -->
+  <section class="filtre-galerie">
+    <div class="galerie">
+      <div id="escaliers" class="ancre"></div>
+      <div class="bloc-image-texte" data-categorie="escaliers" style="display: none;">
         <div class="bloc-image">
           <img src="../images/escalier13.webp" alt="Escalier design">
         </div>
         <div class="texte">
-          <h2>Échangeons sur votre projet</h2>
-<p>Chaque réalisation est unique, à l’image de nos clients. Faites-nous part de vos idées et nous les transformerons en réalité.</p>
-<p class="texte-important"> Complétez le formulaire ci-dessous et nous vous recontacterons dans les plus brefs délais.</p>
+          <h2>Découvrez notre savoir-faire en ferronnerie</h2>
+          <p class="texte-important">Souvent au cœur de l'habitation, l'escalier est bien plus qu'un élément
+            fonctionnel...</p>
+          <p><strong>Chez Tomatis Azur, nous transformons chaque escalier en une véritable œuvre d'art</strong>...</p>
+        </div>
+      </div>
+
+      <div class="groupe" data-categorie="escaliers" style="display: none;">
+        <h2>Nos escaliers</h2>
+        <div class="conteneur-texte">
+          <h3>Investir dans un escalier en ferronnerie, c'est choisir la durabilité...</h3>
+        </div>
+
+        <div class="owl-carousel galerie-defilante">
+          <a href="../images/escalier2.webp" data-lightbox="escaliers"><img src="../images/escalier2.webp"
+              alt="escalier 1"></a>
+          <a href="../images/escalier3.webp" data-lightbox="escaliers"><img src="../images/escalier3.webp"
+              alt="escalier 2"></a>
+          <a href="../images/escalier4.webp" data-lightbox="escaliers"><img src="../images/escalier4.webp"
+              alt="escalier 3"></a>
+          <a href="../images/escalier5.webp" data-lightbox="escaliers"><img src="../images/escalier5.webp"
+              alt="escalier 4"></a>
+          <a href="../images/escalier7.webp" data-lightbox="escaliers"><img src="../images/escalier7.webp"
+              alt="escalier 6"></a>
+          <a href="../images/escalier8.webp" data-lightbox="escaliers"><img src="../images/escalier8.webp"
+              alt="escalier 7"></a>
+          <a href="../images/escalier9.webp" data-lightbox="escaliers"><img src="../images/escalier9.webp"
+              alt="escalier 8"></a>
+          <a href="../images/escalier10.webp" data-lightbox="escaliers"><img src="../images/escalier10.webp"
+              alt="escalier 9"></a>
+          <a href="../images/escalier11.webp" data-lightbox="escaliers"><img src="../images/escalier11.webp"
+              alt="escalier 10"></a>
+          <a href="../images/escalier12.webp" data-lightbox="escaliers"><img src="../images/escalier12.webp"
+              alt="escalier 11"></a>
+          <a href="../images/escalier13.webp" data-lightbox="escaliers"><img src="../images/escalier13.webp"
+              alt="escalier 12"></a>
+          <a href="../images/escalier14.webp" data-lightbox="escaliers"><img src="../images/escalier14.webp"
+              alt="escalier 13"></a>
+          <a href="../images/escalier15.webp" data-lightbox="escaliers"><img src="../images/escalier15.webp"
+              alt="escalier 14"></a>
+          <a href="../images/escalier16.webp" data-lightbox="escaliers"><img src="../images/escalier16.webp"
+              alt="escalier 15"></a>
+          <a href="../images/escalier18.jpeg" data-lightbox="escaliers"><img src="../images/escalier18.jpeg"
+              alt="escalier 16"></a>
+          <a href="../images/escalier19.jpeg" data-lightbox="escaliers"><img src="../images/escalier19.jpeg"
+              alt="escalier 17"></a>
+          <a href="../images/escalier20.jpeg" data-lightbox="escaliers"><img src="../images/escalier20.jpeg"
+              alt="escalier 18"></a>
+
+        </div>
+
+        <div class="bloc-image-texte2" data-categorie="escaliers" style="display: flex;">
+          <div class="bloc-image">
+            <img src="../images/escalier13.webp" alt="Escalier design">
+          </div>
+          <div class="texte">
+            <h2>Échangeons sur votre projet</h2>
+            <p>Chaque réalisation est unique...</p>
+            <p class="texte-important"> Complétez le formulaire ci-dessous...</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-
-<!-- Groupe PORTAILS -->
-<section class="filtre-galerie">
-  <div class="galerie">
-    <div id="portails" class="ancre"></div>
-    <div class="bloc-image-texte" data-categorie="portails" style="display: none;">
-      <div class="bloc-image">
-        <img src="../images/portail1.webp" alt="Portail design">
-      </div>
-      <div class="texte">
-        <h2>Des portails qui allient sécurité et esthétisme</h2>
-        <p class="texte-important"> Le portail est le premier élément que l'on voit d'une propriété. Il donne le ton, reflète votre style et protège votre intimité.<bold>Un portail en feronnerie sur mesure</bold>, c'est l'alliance parfaite entre<bold>écurité, robustesse et esthétisme.</bold></p>
-      <p><strong>Chez Tomatis Azur, nous concevons des portails qui allient élégance et solidité</strong>, en tenant compte de l'architecture de votre maison et de vos gouts. Qu'il soit battant ou coulissant, classique ou moderne, chaque portail est travaillé dans les moindres détails pour sublimer votre entrée.</p>
-      </div>
-    </div>
-
-    <div class="groupe" data-categorie="portails" style="display: none;">
-      <h2>Nos portails</h2>
-      <div class="conteneur-texte">
-      <h3>Un beau portail, c'est bien plus qu'une barrière : c'est une signature. C'est aussi un investissement durable, qui valorise votre propriété et en renforce le cachet.</h3>
-      </div>
-      <div class="owl-carousel galerie-defilante">
-   <a href="../images/portail1.webp" data-lightbox="portail"><img src="../images/portail1.webp" alt="portail 1"></a>
-  <a href="../images/portail2.webp" data-lightbox="portail"><img src="../images/portail2.webp" alt="portail 2"></a>
-  <a href="../images/portail3.webp" data-lightbox="portail"><img src="../images/portail3.webp" alt="portail 3"></a>
-    <a href="../images/portail5.webp" data-lightbox="portail"><img src="../images/portail5.webp" alt="portail 5"></a>
-  <a href="../images/portail6.webp" data-lightbox="portail"><img src="../images/portail6.webp" alt="portail 6"></a>
-  <a href="../images/portail7.webp" data-lightbox="portail"><img src="../images/portail7.webp" alt="portail 7"></a>
-<a href="../images/portail8.webp" data-lightbox="portail"><img src="../images/portail8.webp" alt="portail 8"></a>
-  <a href="../images/portail9.webp" data-lightbox="portail"><img src="../images/portail9.webp" alt="portail 9"></a>
-</div>
-
- <!-- Bloc image + texte DUPLIQUÉ -->
-      <div class="bloc-image-texte3" data-categorie="portails" style="display: flex;">
+  <!-- ================= PORTAILS ================= -->
+  <section class="filtre-galerie">
+    <div class="galerie">
+      <div id="portails" class="ancre"></div>
+      <div class="bloc-image-texte" data-categorie="portails" style="display: none;">
         <div class="bloc-image">
-          <img src="../images/portail1.webp" alt="portail design">
+          <img src="../images/portail1.webp" alt="Portail design">
         </div>
         <div class="texte">
-          <h2>Échangeons sur votre projet</h2>
-          <p>Chaque réalisation est unique, à l’image de nos clients. Faites-nous part de vos idées et nous les transformerons en réalité.</p>
-          <p class="texte-important">Complétez le formulaire ci-dessous et nous vous recontacterons dans les plus brefs délais.</p>
+          <h2>Des portails qui allient sécurité et esthétisme</h2>
+          <p class="texte-important">Le portail est le premier élément que l'on voit...</p>
+          <p><strong>Chez Tomatis Azur, nous concevons des portails...</strong></p>
+        </div>
+      </div>
+
+      <div class="groupe" data-categorie="portails" style="display: none;">
+        <h2>Nos portails</h2>
+        <div class="conteneur-texte">
+          <h3>Un beau portail, c'est bien plus qu'une barrière...</h3>
+        </div>
+        <div class="owl-carousel galerie-defilante">
+          <a href="../images/portail1.webp" data-lightbox="portail"><img src="../images/portail1.webp"
+              alt="portail 1"></a>
+          <a href="../images/portail2.webp" data-lightbox="portail"><img src="../images/portail2.webp"
+              alt="portail 2"></a>
+          <a href="../images/portail3.webp" data-lightbox="portail"><img src="../images/portail3.webp"
+              alt="portail 3"></a>
+          <a href="../images/portail5.webp" data-lightbox="portail"><img src="../images/portail5.webp"
+              alt="portail 4"></a>
+          <a href="../images/portail6.webp" data-lightbox="portail"><img src="../images/portail6.webp"
+              alt="portail 5"></a>
+          <a href="../images/portail7.webp" data-lightbox="portail"><img src="../images/portail7.webp"
+              alt="portail 6"></a>
+          <a href="../images/portail8.webp" data-lightbox="portail"><img src="../images/portail8.webp"
+              alt="portail 7"></a>
+          <a href="../images/portail9.webp" data-lightbox="portail"><img src="../images/portail9.webp"
+              alt="portail 8"></a>
+        </div>
+
+        <div class="bloc-image-texte3" data-categorie="portails" style="display: flex;">
+          <div class="bloc-image">
+            <img src="../images/portail1.webp" alt="portail design">
+          </div>
+          <div class="texte">
+            <h2>Échangeons sur votre projet</h2>
+            <p>Chaque réalisation est unique...</p>
+            <p class="texte-important">Complétez le formulaire ci-dessous...</p>
+          </div>
         </div>
       </div>
     </div>
-   </div>
- </div>
-</section>
+  </section>
 
-<!-- Groupe GARDE-CORPS -->
-<section class="filtre-galerie">
-  <div class="galerie">
-<div id="gardecorps" class="ancre"></div>
-    <div class="bloc-image-texte" data-categorie="gardecorps" style="display: none;">
-      <div class="bloc-image">
-        <img src="../images/GC1.webp" alt="Garde-corps design">
-      </div>
-      <div class="texte">
-        <h2>Des garde-corps sécurisés et élégants</h2>
-        <p class="texte-important">Souvent négligé, le garde-corps est pourtant un élément essentiel de votre habitation. Il assure votre sécurité tout en participant pleinement a l'esthétique de votre intérieur ou de vos extérieurs. En ferronnerie, il devient un véritable atout décoratif.</p>
-      <p><strong>Chez Tomatis Azur, nous réalisons des garde-corps sur mesure, alliant résistance, finesse et originalité.</strong> Que ce soit pour un escalier, un balcon, une terasse ou une mezzanine, nos créations s'adaptent parfaitement a votre style, du plus traditionnel au plus contemporain.</p>
-      </div>
-    </div>
-
-    <div class="groupe" data-categorie="gardecorps" style="display: none;">
-      <h2>Nos Garde-corps</h2>
-      <div class="conteneur-texte">
-      <h3>Un garde-corps bien pensé, c'est l'assurance d'un espace sur, sans compromis sur le design. C'est aussi une manière élégante d'affirmer votre personnalité dans les moindres détails de votre habitat.</h3>
-      </div>
-      <div class="owl-carousel galerie-defilante">
-    <a href="../images/GC1.webp" data-lightbox="Garde-corps"><img src="../images/GC1.webp" alt="GC1 1"></a>
-    <a href="../images/GC2.webp" data-lightbox="Garde-corps"><img src="../images/GC2.webp" alt="GC1 2"></a>
-    <a href="../images/GC3.webp" data-lightbox="Garde-corps"><img src="../images/GC3.webp" alt="GC1 3"></a>
-    <a href="../images/GC4.webp" data-lightbox="Garde-corps"><img src="../images/GC4.webp" alt="GC1 4"></a>
-    <a href="../images/GC6.webp" data-lightbox="Garde-corps"><img src="../images/GC6.webp" alt="GC1 5"></a>
-    <a href="../images/GC7.webp" data-lightbox="Garde-corps"><img src="../images/GC7.webp" alt="GC1 6"></a>
-    <a href="../images/GC8.webp" data-lightbox="Garde-corps"><img src="../images/GC8.webp" alt="GC1 7"></a>
-    <a href="../images/GC9.webp" data-lightbox="Garde-corps"><img src="../images/GC9.webp" alt="GC1 8"></a>
-    <a href="../images/GC10.webp" data-lightbox="Garde-corps"><img src="../images/GC10.webp" alt="GC1 9"></a>
-    <a href="../images/GC11.webp" data-lightbox="Garde-corps"><img src="../images/GC11.webp" alt="GC1 10"></a>
-    <a href="../images/GC13.webp" data-lightbox="Garde-corps"><img src="../images/GC13.webp" alt="GC1 11"></a>
-    <a href="../images/GC14.webp" data-lightbox="Garde-corps"><img src="../images/GC14.webp" alt="GC1 12"></a>
-    <a href="../images/GC15.webp" data-lightbox="Garde-corps"><img src="../images/GC15.webp" alt="GC1 13"></a>
-    <a href="../images/GC16.webp" data-lightbox="Garde-corps"><img src="../images/GC16.webp" alt="GC1 14"></a>
-    <a href="../images/GC17.webp" data-lightbox="Garde-corps"><img src="../images/GC17.webp" alt="GC1 15"></a>
-    <a href="../images/GC18.webp" data-lightbox="Garde-corps"><img src="../images/GC18.webp" alt="GC1 16"></a>
-    <a href="../images/GC19.webp" data-lightbox="Garde-corps"><img src="../images/GC19.webp" alt="GC1 17"></a>
-    <a href="../images/GC20.webp" data-lightbox="Garde-corps"><img src="../images/GC20.webp" alt="GC1 18"></a>
-  </div>
-
-  <!-- Bloc image + texte DUPLIQUÉ -->
-      <div class="bloc-image-texte4" data-categorie="gardecorps" style="display: flex;">
+  <!-- ================= GARDE-CORPS ================= -->
+  <section class="filtre-galerie">
+    <div class="galerie">
+      <div id="gardecorps" class="ancre"></div>
+      <div class="bloc-image-texte" data-categorie="gardecorps" style="display: none;">
         <div class="bloc-image">
-          <img src="../images/GC10.webp" alt="garde-corps design">
+          <img src="../images/GC1.webp" alt="Garde-corps design">
         </div>
         <div class="texte">
-          <h2>Échangeons sur votre projet</h2>
-          <p>Chaque réalisation est unique, à l’image de nos clients. Faites-nous part de vos idées et nous les transformerons en réalité.</p>
-          <p class="texte-important">Complétez le formulaire ci-dessous et nous vous recontacterons dans les plus brefs délais.</p>
+          <h2>Des garde-corps sécurisés et élégants</h2>
+          <p class="texte-important">Souvent négligé, le garde-corps est pourtant un élément essentiel...</p>
+          <p><strong>Chez Tomatis Azur, nous réalisons des garde-corps sur mesure...</strong></p>
+        </div>
+      </div>
+
+      <div class="groupe" data-categorie="gardecorps" style="display: none;">
+        <h2>Nos garde-corps</h2>
+        <div class="conteneur-texte">
+          <h3>Un garde-corps bien pensé, c'est l'assurance d'un espace sûr...</h3>
+        </div>
+        <div class="owl-carousel galerie-defilante">
+          <a href="../images/GC1.webp" data-lightbox="Garde-corps"><img src="../images/GC1.webp" alt="GC1 1"></a>
+          <a href="../images/GC2.webp" data-lightbox="Garde-corps"><img src="../images/GC2.webp" alt="GC1 2"></a>
+          <a href="../images/GC3.webp" data-lightbox="Garde-corps"><img src="../images/GC3.webp" alt="GC1 3"></a>
+          <a href="../images/GC4.webp" data-lightbox="Garde-corps"><img src="../images/GC4.webp" alt="GC1 4"></a>
+          <a href="../images/GC5.jpg" data-lightbox="Garde-corps"><img src="../images/GC5.jpg" alt="GC1 5"></a>
+          <a href="../images/GC6.webp" data-lightbox="Garde-corps"><img src="../images/GC6.webp" alt="GC1 6"></a>
+          <a href="../images/GC7.webp" data-lightbox="Garde-corps"><img src="../images/GC7.webp" alt="GC1 7"></a>
+          <a href="../images/GC8.webp" data-lightbox="Garde-corps"><img src="../images/GC8.webp" alt="GC1 8"></a>
+          <a href="../images/GC9.webp" data-lightbox="Garde-corps"><img src="../images/GC9.webp" alt="GC1 9"></a>
+          <a href="../images/GC10.webp" data-lightbox="Garde-corps"><img src="../images/GC10.webp" alt="GC1 10"></a>
+          <a href="../images/GC11.webp" data-lightbox="Garde-corps"><img src="../images/GC11.webp" alt="GC1 11"></a>
+          <a href="../images/GC12.jpeg" data-lightbox="Garde-corps"><img src="../images/GC12.jpeg" alt="GC1 12"></a>
+          <a href="../images/GC13.webp" data-lightbox="Garde-corps"><img src="../images/GC13.webp" alt="GC1 13"></a>
+          <a href="../images/GC14.webp" data-lightbox="Garde-corps"><img src="../images/GC14.webp" alt="GC1 14"></a>
+          <a href="../images/GC15.webp" data-lightbox="Garde-corps"><img src="../images/GC15.webp" alt="GC1 15"></a>
+          <a href="../images/GC16.webp" data-lightbox="Garde-corps"><img src="../images/GC16.webp" alt="GC1 16"></a>
+          <a href="../images/GC17.webp" data-lightbox="Garde-corps"><img src="../images/GC17.webp" alt="GC1 17"></a>
+          <a href="../images/GC18.webp" data-lightbox="Garde-corps"><img src="../images/GC18.webp" alt="GC1 18"></a>
+          <a href="../images/GC19.webp" data-lightbox="Garde-corps"><img src="../images/GC19.webp" alt="GC1 19"></a>
+          <a href="../images/GC20.webp" data-lightbox="Garde-corps"><img src="../images/GC20.webp" alt="GC1 20"></a>
+          <a href="../images/GC21.jpeg" data-lightbox="Garde-corps"><img src="../images/GC21.jpeg" alt="GC1 21"></a>
+          <a href="../images/GC22.jpeg" data-lightbox="Garde-corps"><img src="../images/GC22.jpeg" alt="GC1 22"></a>
+          <a href="../images/GC23.jpeg" data-lightbox="Garde-corps"><img src="../images/GC23.jpeg" alt="GC1 23"></a>
+        </div>
+
+        <div class="bloc-image-texte4" data-categorie="gardecorps" style="display: flex;">
+          <div class="bloc-image">
+            <img src="../images/GC10.webp" alt="garde-corps design">
+          </div>
+          <div class="texte">
+            <h2>Échangeons sur votre projet</h2>
+            <p>Chaque réalisation est unique...</p>
+            <p class="texte-important">Complétez le formulaire ci-dessous...</p>
+          </div>
         </div>
       </div>
     </div>
+  </section>
+
+  <!-- ================= FORMULAIRE ================= -->
+  <section class="contact-section">
+    <h2><span>PARTAGEZ-NOUS VOTRE PROJET,</span><br>NOUS LUI DONNERONS VIE</h2>
+    <form action="https://formspree.io/f/xqayqwqg" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Nom, Prénom*" required>
+      <div class="flex-row">
+        <input type="email" name="email" placeholder="E-mail*" required>
+        <input type="tel" name="phone" placeholder="Téléphone">
+      </div>
+      <textarea name="message" placeholder="Message*" rows="5" required></textarea>
+
+      <div class="rgpd-wrapper">
+        <label class="rgpd-checkbox">
+          <input type="checkbox" name="rgpd" required>
+          En utilisant ce formulaire, j’accepte explicitement que les informations saisies soient enregistrées et
+          utilisées pour me recontacter. *
+        </label>
+        <p class="rgpd-note">
+          Pour connaître et exercer vos droits, veuillez consulter notre
+          <a href="/politique-de-confidentialite" target="_blank">politique de confidentialité</a>.
+        </p>
+        <p class="rgpd-obligatoire">* Champs obligatoires</p>
+      </div>
+
+      <button type="submit">Envoyez message</button>
+    </form>
+  </section>
+
+  <hr class="separator">
+
+  <div class="contact-infos">
+    <h3>Contactez-nous</h3>
+    <p><a href="mailto:tomatis@hotmail.fr">tomatis@hotmail.fr</a><br>
+      <strong>+33 (0)6 19 37 03 07</strong>
+    </p>
+
+    <h4>Notre adresse</h4>
+    <p>160 route de Castellar<br>
+      06500 | Menton | FRANCE</p>
   </div>
-</section>
-
-
-<!-- FORMULAIRE DE CONTACT GENERIQUE -->
-<section class="contact-section">
-  <h2><span>PARTAGEZ-NOUS VOTRE PROJET,</span><br>NOUS LUI DONNERONS VIE</h2>
-  <form class="contact-form">
-    <input type="text" name="name" placeholder="Nom, Prénom*" required>
-    <div class="flex-row">
-      <input type="email" name="email" placeholder="E-mail*" required>
-      <input type="tel" name="phone" placeholder="Téléphone">
-    </div>
-    <textarea name="message" placeholder="Message*" rows="5" required></textarea>
-    <button type="submit">Envoyez message</button>
-  </form>
-</section>
-
-   <div class="rgpd-wrapper">
-  <label class="rgpd-checkbox">
-    <input type="checkbox" required>
-    En utilisant ce formulaire, j’accepte explicitement que les informations saisies soient enregistrées et utilisées pour me recontacter. *
-  </label>
-  <p class="rgpd-note">
-    Pour connaître et exercer vos droits, notamment de retrait de votre consentement à l’utilisation des données collectées, veuillez consulter notre
-    <a href="/politique-de-confidentialite">politique de confidentialité</a>.
-  </p>
-  <p class="rgpd-obligatoire">* Champs obligatoires</p>
-</div>
-
-<hr class="separator">
-
-<div class="contact-infos">
-  <h3>Contactez-nous</h3>
-  <p><a href="mailto:tomatis@hotmail.fr">tomatis@hotmail.fr</a><br>
-  <strong>+33 (0)6 19 37 03 07</strong></p>
-
-  <h4>Notre adresse</h4>
-  <p>160 route de Castellar<br>
-  06500 | Menton | FRANCE</p>
-</div>
 
   <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="../js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
-<script>
-  lightbox.option({
-    'resizeDuration': 200,              // Durée de l'animation (en ms)
-    'wrapAround': true,                 // Permet de boucler les images (revenir à la première après la dernière)
-    'alwaysShowNavOnTouchDevices': true // Affiche les flèches de navigation sur mobile
-  });
-</script>
+  <script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true,
+      'alwaysShowNavOnTouchDevices': true
+    });
 
-<script>
-  document.getElementById("burger").addEventListener("click", function () {
-    const nav = document.querySelector(".nav-links");
-    nav.classList.toggle("active");
-  });
-</script>
+    document.getElementById("burger").addEventListener("click", function () {
+      const nav = document.querySelector(".nav-links");
+      nav.classList.toggle("active");
+    });
+  </script>
 
-<footer class="footer">
+  <footer class="footer">
     <div class="footer-container">
       <div class="footer-logo">
-        <img src="../images/logo-transparent-png.png" alt="logo"/>
+        <img src="../images/logo-transparent-png.png" alt="logo" />
       </div>
 
       <div class="footer-links">
@@ -290,8 +317,9 @@
     </div>
 
     <div class="footer-bottom">
-  &copy; 2025 Tomatis Azur - Ferronnerie sur-mesure
-</div>
-</footer>
+      &copy; 2025 Tomatis Azur - Ferronnerie sur-mesure
+    </div>
+  </footer>
 </body>
+
 </html>
