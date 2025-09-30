@@ -1,0 +1,44 @@
+/* --- base.css --- */
+body {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+h1, h2 {
+  font-weight: 100;
+  font-family: 'Oswald', sans-serif;
+  color: black;
+  text-align: center;
+}
+
+h1 {
+  padding-top: 20px;
+  margin-bottom: -50px;
+}
+
+h2 {
+  margin-top: 70px;
+  font-weight: 300;
+}
+
+h3 {
+  color: black;
+  font-weight: 200;
+}
+
+p {
+  color: black !important;
+}
+
+section {
+  padding: 2rem;
+}
+
+footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}

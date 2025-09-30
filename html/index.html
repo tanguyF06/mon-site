@@ -4,63 +4,283 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Accueil - Tomatis Azur</title>
-  <link rel="stylesheet" href="../css/style.css" />
-</head>
+ <!-- CSS de base et reset -->
+<link rel="stylesheet" href="../css/reset.css"/>
+<link rel="stylesheet" href="../css/base.css"/>
+<link rel="stylesheet" href="../css/navbar.css"/>
+<link rel="stylesheet" href="../css/galerie.css"/>
+
+<!-- CSS de la page d'accueil en dernier -->
+<link rel="stylesheet" href="../css/accueil.css"/>
+
+<!-- Librairies externes -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+<link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Oswald&display=swap" rel="stylesheet"/>
+
+
+
 <body>
 
-<video autoplay muted loop playsinline id="background-video">
-  <source src="videobackground.mp4" type="video/mp4">
-</video>
-
   <header>
-    <div class="navbar">
-      <h1 class="logo">Tomatis Azur</h1>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="galerie.html">Galerie</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- HERO / BANNIÈRE -->
-  <section class="hero">
-    <div class="hero-content">
-      <h2>Artisan ferronnier à votre service</h2>
-      <p>Des créations sur-mesure en métal pour valoriser vos espaces.</p>
-      <a href="contact.html" class="btn">Demander un devis</a>
-    </div>
-  </section>
-
-  <!-- PRÉSENTATION -->
-  <section class="presentation">
-    <h2>À propos de Tomatis Azur</h2>
-    <p>Spécialisés dans la ferronnerie d'art, nous réalisons des escaliers, garde-corps, portails et bien plus encore. Chaque pièce est pensée et fabriquée sur mesure dans notre atelier.</p>
-  </section>
-
-  <!-- SERVICES -->
-  <section class="services">
-    <h2>Nos spécialités</h2>
-    <ul>
-      <li>Escaliers métalliques design</li>
-      <li>Garde-corps intérieur & extérieur</li>
-      <li>Portails personnalisés</li>
-      <li>Ferronnerie décorative</li>
+  <div class="navbar">
+    <nav class="navbar1">
+      <div class="nav-left"></div>
+      <a href="index.html" class="logo1">
+        <img src="../images/logo-transparent-png.png" alt="logo de la société">
+      </a>
+    </nav>
+   
+    <!--Burger-->
+    <div class="burger" id="burger">&#9776;</div>
+    
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="galerie.html">Galerie</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
-  </section>
+  </div>
+</header>
 
-  <!-- APPEL À ACTION -->
-  <section class="cta">
-    <h2>Un projet ? Parlons-en.</h2>
-    <a href="contact.html" class="btn">Contactez-nous</a>
-  </section>
 
-  <footer>
-    <p>&copy; 2025 Tomatis Azur - Ferronnerie sur-mesure</p>
-  </footer>
-  
-  <script src="script.js"></script>
+<!-- HERO IMAGE -->
+<section class="hero">
+  <div class="hero-text pop-target">
+    <h1>
+      <span class="white-text">Ferronnerie</span>
+      <span class="gold-text">d'Art</span>
+    </h1>
+    <div class="line"></div>
+    <p>Portails, Escalier, Garde-corps sur mesure</p>
+  </div>
+</section>
+
+ 
+<section class="parallax-section">
+  <div class="left-column">
+    <div class="text-content">
+      <h2 class="animate-from-left">Un savoir-faire d'exception</h2>
+      <p class="animate-from-right">Finitions sur-mesure et qualité artisanale</p>
+      <p class="animate-from-left">Visualisez nos projets par catégorie.</p>
+    </div>
+
+    <div class="mini-gallery-inline">
+      <div class="gallery-item">
+        <a href="../html/galerie.html">
+          <img src="../images/escalierminigallery.jpeg" alt="Escalier">
+          <div class="overlay">Escaliers</div>
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="../html/galerie.html">
+          <img src="../images/portailminigallery.jpeg" alt="Portail">
+          <div class="overlay">Portails</div>
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="../html/galerie.html">
+          <img src="../images/gcminigallery.jpg" alt="Garde-corps">
+          <div class="overlay">Garde-corps</div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="image-container">
+    <div class="image-parallax" style="background-image: url('../images/feronnier2.webp');"></div>
+  </div>
+</section>
+
+<!--GRID-->
+<div class="section2">
+  <!-- Colonne gauche -->
+  <div class="left-content">
+    <div class="text">
+      <h1>
+       <span class="white-text">À LA HAUTEUR</span><br>
+      <span class="dark-text">DE VOS</span><br>
+      <span class="dark-text">EXIGENCES</span><br>
+      </h1>
+       <div class="underline"></div>
+      <ul>
+        <li>Accueil bilingue, conseils et suivi clients personnalisés</li>
+        <li>Solutions techniques et expertise</li>
+        <li>Fabrication sur-mesure dans notre atelier a Menton </li>
+        <li>Matériaux français ou italiens et fabrication artisanale</li>
+        <li>Livraison en France et à l’étranger</li>
+        <li>Installation sur site par notre équipe</li>
+        <li>Confidentialité et discrétion</li>
+      </ul>
+    </div>
+
+    <div class="bottom-images">
+      <img src="../images/photoescaliergrid.jpg" alt="Patron">
+      <img src="../images/papamatteo.webp" alt="Escalier">
+    </div>
+  </div>
+
+  <!-- Colonne droite -->
+  <div class="right-image">
+    <img src="../images/photomarteaugrid.jpg" alt="feronnier">
+  </div>
+</div>
+
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="../images/logo-transparent-png.png" alt="logo"/>
+      </div>
+
+      <div class="footer-links">
+        <a href="../html/index.html">Accueil</a>
+        <a href="../html/galerie.html">Galerie</a>
+        <a href="../html/contact.html">Contact</a>
+        <a href="#">Mentions légales</a>
+      </div>
+
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+  &copy; 2025 Tomatis Azur - Ferronnerie sur-mesure
+</div>
+</footer>
+
+<script>
+  const burger = document.getElementById('burger');
+  const navLinks = document.getElementById('nav-links');
+
+  burger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+
+  // Facultatif : ferme le menu si on clique sur un lien
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => navLinks.classList.remove('active'));
+  });
+
+  // Facultatif : réinitialise si on repasse en desktop
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) navLinks.classList.remove('active');
+  });
+</script>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const categorie = params.get("categorie");
+
+  if (categorie) {
+    // Par exemple : masquer les autres sections
+    document.querySelectorAll(".gallery-section").forEach(section => {
+      if (!section.classList.contains(categorie)) {
+        section.style.display = "none";
+      }
+    });
+  }
+</script>
+
+<script>
+  // Observer pour .animate-from-left, .animate-from-right, .service
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Ajoute les classes d’animation
+        if (entry.target.classList.contains('animate-from-left') || entry.target.classList.contains('animate-from-right')) {
+          entry.target.classList.add('animate-visible');
+        }
+
+        if (entry.target.classList.contains('service')) {
+          entry.target.classList.add('visible');
+        }
+
+        observer.unobserve(entry.target); // Animation une seule fois
+      }
+    });
+  }, { threshold: 0.3 });
+
+  // Cible tous les éléments à animer
+  document.querySelectorAll('.animate-from-left, .animate-from-right, .service')
+    .forEach(el => observer.observe(el));
+</script>
+
+
+
+
+<script>
+  window.addEventListener('scroll', function () {
+    const parallax = document.querySelector('.image-parallax');
+    const container = document.querySelector('.image-container');
+
+    if (!parallax || !container) return;
+
+    const rect = container.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+
+    if (rect.top < windowHeight && rect.bottom > 0) {
+      const scrollProgress = (windowHeight - rect.top) / (windowHeight + rect.height);
+      const move = (scrollProgress - 0.5) * 350;
+      parallax.style.transform = `translateY(${move}px)`;
+    }
+  });
+</script>
+
+<script>
+  const popObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('pop-in');
+        popObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  document.querySelectorAll('.pop-target').forEach(el => popObserver.observe(el));
+</script>
+
+<script>
+function setCookie(name, value, days) {
+  const d = new Date();
+  d.setTime(d.getTime() + (days*24*60*60*1000));
+  const expires = "expires=" + d.toUTCString();
+  document.cookie = name + "=" + value + ";" + expires + ";path=/";
+}
+
+function getCookie(name) {
+  const cname = name + "=";
+  const decoded = decodeURIComponent(document.cookie);
+  const cookies = decoded.split(';');
+  for(let i = 0; i < cookies.length; i++) {
+    let c = cookies[i].trim();
+    if (c.indexOf(cname) === 0) return c.substring(cname.length, c.length);
+  }
+  return "";
+}
+
+function checkCookies() {
+  if (!getCookie("cookiesAccepted")) {
+    document.getElementById("cookie-banner").style.display = "block";
+  }
+}
+
+function acceptCookies() {
+  setCookie("cookiesAccepted", "true", 365);
+  document.getElementById("cookie-banner").style.display = "none";
+}
+
+checkCookies();
+</script>
+
+
+<div id="cookie-banner" style="display:none;">
+  Ce site utilise des cookies pour améliorer votre expérience.
+  <button onclick="acceptCookies()">Accepter</button>
+</div>
+
 </body>
 </html>

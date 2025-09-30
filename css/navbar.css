@@ -1,0 +1,117 @@
+/* === RESET de base === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+/* === NAVBAR GLOBALE === */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 20px;
+  position: relative;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Boutons filtres */
+.boutons {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+}
+
+.filtre-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filtre-btn:hover {
+  background: #555;
+}
+
+/* Menu nav classique */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #c9a74b;
+}
+
+/* Burger menu */
+.burger {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+/* === Responsive === */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    align-self: center;
+    margin-bottom: 10px;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    background-color: black;
+    padding: 10px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .boutons {
+    position: static;
+    transform: none;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 100%;
+  }
+}
