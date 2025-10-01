@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accueil - Tomatis Azur</title>
+  <!-- CSS de base et reset -->
+  <link rel="stylesheet" href="../css/accueil.css"/>
+  <link rel="stylesheet" href="../css/reset.css"/>
+  <link rel="stylesheet" href="../css/base.css"/>
+  <link rel="stylesheet" href="../css/navbar.css"/>
+  <link rel="stylesheet" href="../css/galerie.css"/>
+  <link rel="stylesheet" href="../css/contact.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Oswald&display=swap" rel="stylesheet"/>
+  <script src="../js/script.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <nav class="navbar1">
+        <div class="nav-left"></div>
+        <a href="index.html" class="logo1">
+          <img src="images/logo-transparent-png.png" alt="logo de la société">
+        </a>
+      </nav>
+      
+      <!--Burger-->
+      <div class="burger" id="burger">&#9776;</div>
+
+      <ul class="nav-links" id="navlinks">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- SECTION CONTACT -->
+  <section class="contact-section">
+    <h2><span>PARTAGEZ-NOUS VOTRE PROJET,</span><br>NOUS LUI DONNERONS VIE</h2>
+    
+    <!-- Formulaire connecté à Formspree -->
+    <form action="https://formspree.io/f/xqayqwqg" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Nom, Prénom*" required>
+      
+      <div class="flex-row">
+        <input type="email" name="email" placeholder="E-mail*" required>
+        <input type="tel" name="phone" placeholder="Téléphone">
+      </div>
+      
+      <textarea name="message" placeholder="Message*" rows="5" required></textarea>
+
+      <!-- RGPD intégré dans le formulaire -->
+      <div class="rgpd-wrapper">
+        <label class="rgpd-checkbox">
+          <input type="checkbox" name="rgpd" required>
+          En utilisant ce formulaire, j’accepte explicitement que les informations saisies soient enregistrées et utilisées pour me recontacter. *
+        </label>
+        <p class="rgpd-note">
+          Pour connaître et exercer vos droits, veuillez consulter notre
+          <a href="/politique-de-confidentialite" target="_blank">politique de confidentialité</a>.
+        </p>
+        <p class="rgpd-obligatoire">* Champs obligatoires</p>
+      </div>
+
+      <button type="submit">Envoyez message</button>
+    </form>
+  </section>
+
+  <hr class="separator">
+
+  <!-- INFOS CONTACT -->
+  <div class="contact-infos">
+    <h3>Contactez-nous</h3>
+    <p>
+      <a href="mailto:tomatis@hotmail.fr">tomatis@hotmail.fr</a><br>
+      <strong>+33 (0)6 19 37 03 07</strong>
+    </p>
+
+    <h4>Notre adresse</h4>
+    <p>
+      160 route de Castellar<br>
+      06500 | Menton | FRANCE
+    </p>
+  </div>
+
+  <!-- MAP -->
+  <div class="map-container">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.0294848989736!2d7.330026215480243!3d43.707057179119746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdc2ed4e2cefb9%3A0x84faaf2a9f9e22ae!2s160%20Route%20de%20Castellar%2C%2006500%20Menton%2C%20France!5e0!3m2!1sfr!2sfr!4v1717338926000!5m2!1sfr!2sfr"
+      width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById("burger").addEventListener("click", function () {
+      const nav = document.querySelector(".nav-links");
+      nav.classList.toggle("active");
+    });
+  </script>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="../images/logo-transparent-png.png" alt="logo"/>
+      </div>
+
+      <div class="footer-links">
+        <a href="../html/index.html">Accueil</a>
+        <a href="../html/galerie.html">Galerie</a>
+        <a href="../html/contact.html">Contact</a>
+        <a href="#">Mentions légales</a>
+      </div>
+
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      &copy; 2025 Tomatis Azur - Ferronnerie sur-mesure
+    </div>
+  </footer>
+</body>
+</html>
